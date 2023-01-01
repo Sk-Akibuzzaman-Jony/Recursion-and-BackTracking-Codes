@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Solution {
+public:
+
+    void increasingSubs(vector<int>& nums, int i, vector<int>& sizes, string str){
+        if (i == nums.size())
+        {
+            sizes.push_back(str.length());
+        }
+        
+        
+        if (str[str.length()-1]<nums[i])
+        {
+            increasingSubs(nums, i+1, sizes, str+nums[i]);
+        }
+        else
+        {
+            increasingSubs(nums, i+1, sizes, str)
+        }    
+    }
+
+    int lengthOfLIS(vector<int>& nums) {
+        vector<int> sizes;
+        string str = "";
+        int i = 0;
+        
+    }
+};
