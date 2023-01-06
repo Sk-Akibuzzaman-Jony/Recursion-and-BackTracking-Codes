@@ -1,6 +1,7 @@
 
 //Leet Code Question 72
 //VVI Asked in amazon interview
+//Unoptimized using recursion
 
 class Solution {
 public:
